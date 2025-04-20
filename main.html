@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Portfolio Website">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #c205fb, #6f76f8);
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #030923;
+      color: #ee0d0d;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: rgb(23, 2, 250);
+      text-decoration: none;
+    }
+
+    section, article, aside {
+      padding: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #11e137;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    input, textarea, select, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm pushpendra and i am a passionate web developer learning HTML and CSS.</p>
+      <blockquote cite="https://developer.mozilla.org">Learning never exhausts the mind.</blockquote>
+      <details>
+        <summary>More about me</summary>
+        <p>I enjoy building websites and exploring new technologies.and also using some new tools</p>
+      </details>
+    </section>
+
+    <aside>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <h3>Tools</h3>
+      <ol>
+        <li>VS Code</li>
+        <li>GitHub</li>
+        <li>Figma</li>
+      </ol>
+    </aside>
+  </main>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Project One</h3>
+      <p>This is a sample project description.</p>
+      <figure>
+        <img src="C:\Users\ppal3\Downloads\images.png"alt="Project Screenshot" width="300">
+        <figcaption>Screenshot of Project One</figcaption>
+      </figure>
+    </article>
+    <article>
+      <h3>Project Two</h3>
+      <p>Another project I worked on during my learning journey.</p>
+      <table>
+        <caption>Tech Stack</caption>
+        <thead>
+          <tr><th>Language</th><th>Framework</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML</td><td>—</td></tr>
+          <tr><td>CSS</td><td>Tailwind</td></tr>
+        </tbody>
+      </table>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <label for="how">How did you find me?</label>
+      <select id="how" name="how">
+        <option value="google">Google</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="friend">Friend</option>
+      </select>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Made with ❤️ using HTML & CSS</p>
+    <address>Contact: <a href="mailto:you@example.com">you@example.com</a></address>
+  </footer>
+</body>
+</html>
